@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../MF_BattelShifter.srcs/sources_1/new/barrel_shifter_right.sv" \
+"../../../../MF_BattelShifter.srcs/sources_1/new/top_level.sv" \
+"../../../../MF_BattelShifter.srcs/sim_1/new/top_level_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
